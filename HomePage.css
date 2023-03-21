@@ -11,11 +11,13 @@
 
     position: absolute;
 
-    width: 120%;
+    background-color: white;
 
     overflow: auto;
 
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    z-index: 1;
 }
 
 .dropdown:hover .dropdown-content{
@@ -32,6 +34,8 @@
     padding: 5px;
 
     text-decoration: none;
+
+    white-space: nowrap;
 }
 
 .dropdown-content a:hover{
@@ -66,7 +70,7 @@
 }
 
 .title-element h1{
-    text-align: center;
+    text-align: right;
 }
 
 .title-element button{
