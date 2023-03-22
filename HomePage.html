@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" href="./HomePage.css">
         <title>
             Muscle Wiki
@@ -10,13 +13,29 @@
 
     <body>
         <div class="title-bar">
-            <div class="title-element">
+            <div class="title-heading">
                 <h1>Muscle Wiki</h1>
             </div>
-            <div class="title-element">
-                <a href="./SignINUP.html"><button>Sign In / Sign Up</button></a>
+            <div class="title-button">
+                <button onclick="toggleLogin()" class="first-button"><img src="./SignINUPImage.png"></button>
             </div>
+
+            
+
         </div>
+        
+        <div class="popup" id="popup-login">
+            <div class="login-window">
+             <div class="close-btn" onclick="toggleLogin()">
+              &times;</div>
+              
+         <h1>Sign in</h1> 
+           <div class="input-field"><input placeholder="Email" class="validate"></div>
+                <div class="input-field"><input placeholder="Password" class="validate"></div>
+                    <button class="second-button">Sign in</button>
+                </div>
+           </div>
+
         <div class="dropdown">
             <button>Workouts</button>
             <div class="dropdown-content">
@@ -111,5 +130,8 @@
                 </a>
             </div>
         </div>
+
+
+        <script src="./HomePage.js"></script>
     </body>
 </html>

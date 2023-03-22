@@ -65,14 +65,58 @@
     align-items: flex-start;
 }
 
-.title-element{
-    width: 50%;
+.title-heading{
+    text-align: center;
+
+    flex: 1 0 auto;
 }
 
-.title-element h1{
-    text-align: right;
+.title-button img{
+    width: 70px;
+
+    height: 70px;
 }
 
-.title-element button{
-    float: right;
+.popup .login-window {
+    position: absolute;
+
+    background-color: gray;
+    
+    top: 50%;
+    
+    left: 50%;
+    
+    transform: translate(-50%,-150%) scale(0);
+    
+    z-index: 2;
+    
+    text-align: center;
+    
+    z-index: 1;
+}
+
+.popup .close-btn {
+    position: absolute;
+ }
+
+ .close-btn:hover{
+    cursor: pointer;
+ }
+   
+.popup.active .login-window {
+   transition: all 300ms ease-in-out;
+   
+   transform: translate(-50%,-50%) scale(1);
+}
+    
+.first-button:active {  
+    box-shadow:  5px 5px 10px #262626, -5px -5px 10px #262626;
+}
+    
+.second-button:active{
+    box-shadow: 5px 5px 10px #262626, -5px -5px 10px #262626;
+    
+    border: none;
+    
+    outline: none;
 }
