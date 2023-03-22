@@ -1,0 +1,118 @@
+.title-bar{
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: flex-start;
+}
+
+.title-heading{
+    text-align: center;
+
+    flex: 1 0 auto;
+}
+
+.title-button img{
+    width: 70px;
+
+    height: 70px;
+}
+
+.popup .login-window {
+    position: absolute;
+
+    background-color: gray;
+    
+    top: 50%;
+    
+    left: 50%;
+    
+    transform: translate(-50%,-150%) scale(0);
+    
+    z-index: 2;
+    
+    text-align: center;
+    
+    z-index: 1;
+}
+
+.popup .close-btn {
+    position: absolute;
+ }
+
+ .close-btn:hover{
+    cursor: pointer;
+ }
+   
+.popup.active .login-window {
+   transition: all 300ms ease-in-out;
+   
+   transform: translate(-50%,-50%) scale(1);
+}
+    
+.first-button:active {  
+    box-shadow:  5px 5px 10px #262626, -5px -5px 10px #262626;
+}
+    
+.second-button:active{
+    box-shadow: 5px 5px 10px #262626, -5px -5px 10px #262626;
+    
+    border: none;
+    
+    outline: none;
+}
+
+.dropdown{
+
+    display: inline-block;
+
+    position: relative;
+}
+
+.dropdown-content{
+
+    display: none;
+
+    position: absolute;
+
+    background-color: white;
+
+    overflow: auto;
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+
+    display: block;
+}
+
+.dropdown-content a{
+
+    display: block;
+
+    color: black;
+
+    padding: 5px;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover{
+
+    color: white;
+
+    background-color: #00A4BD;
+}
+
+.all-diets{
+    display: flex;
+}
+
+.all-diets diet-contents{
+    flex: 70%;
+}
