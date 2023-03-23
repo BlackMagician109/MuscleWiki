@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Diet:Muscle Wiki</title>
+        
+        <link rel="stylesheet" href="../css/CalorieIntakeCalculator.css">
+    </head>
+    <body>
+        <div class="title-bar">
+            <div class="title-heading">
+                <h1>Muscle Wiki</h1>
+            </div>
+            <div class="title-button">
+                <button onclick="toggleLogin()" class="first-button"><img src="../images/SignINUPImage.png"></button>
+            </div>
+        </div>
+        
+        <div class="popup" id="popup-login">
+            <div class="login-window">
+                <div class="close-btn" onclick="toggleLogin()">&times;</div>
+              
+                <h1>Sign in</h1> 
+                <div class="input-field"><input placeholder="Email" class="validate"></div>
+                <div class="input-field"><input placeholder="Password" class="validate"></div>
+                <button class="second-button">Sign in</button>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+            <button>Workouts</button>
+            <div class="dropdown-content">
+                <a rel="noopener" target="_self" href="../html/PlaceHolder.html">With Equipment</a>
+                <a rel="noopener" target="_self" href="../html/PlaceHolder.html">Without Equipment</a>
+                <a rel="noopener" target="_self" href="../html/ViewAllWorkouts.html">View All</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button>Exercise</button>
+            <div class="dropdown-content">
+                <a rel="noopener" target="_self" href="../html/PlaceHolder.html">Bicep</a>
+                <a rel="noopener" target="_self" href="../html/PlaceHolder.html">Tricep</a>
+                <a rel="noopener" target="_self" href="../html/PlaceHolder.html">Abs</a>
+                <a rel="noopener" target="_self" href="../html/ViewAllExercise.html">View All</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button>Diet</button>
+            <div class="dropdown-content">
+                <a rel="noopener" target="_self" href="../html/PlaceHolder.html">Intermittent Fasting</a>
+                <a rel="noopener" target="_self" href="../html/PlaceHolder.html">Mediterranean Diet</a>
+                <a rel="noopener" target="_self" href="../html/PlaceHolder.html">Veganism</a>
+                <a rel="noopener" target="_self" href="../html/ViewAllDiet.html">View All</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button>Members</button>
+            <div class="dropdown-content">
+                <a rel="noopener" target="_self" href="../html/PlaceHolder.html">Pricing</a>
+                <a rel="noopener" target="_self" href="../html/PlaceHolder.html">Experts</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button>Tools</button>
+            <div class="dropdown-content">
+                <a rel="noopener" target="_self" href="../html/CalorieIntakeCalculator.html">Calorie Intake Calculator</a>
+                <a rel="noopener" target="_self" href="../html/MacroCalculator.html">Macro Calculator</a>
+                <a rel="noopener" target="_self" href="../html/Directory.html">Directory</a>
+            </div>
+        </div>
+
+        <script src="../js/CalorieIntakeCalculator.js"></script>
+    </body>
+</html>
