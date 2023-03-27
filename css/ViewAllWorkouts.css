@@ -108,3 +108,11 @@
 
     background-color: #00A4BD;
 }
+
+.all-workouts{
+    display: flex;
+}
+
+.all-workouts workout-contents{
+    flex: 70%;
+}

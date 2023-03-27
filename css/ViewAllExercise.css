@@ -108,3 +108,11 @@
 
     background-color: #00A4BD;
 }
+
+.all-exercise{
+    display: flex;
+}
+
+.all-exercise exercise-contents{
+    flex: 70%;
+}
