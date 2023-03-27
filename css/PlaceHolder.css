@@ -108,3 +108,11 @@
 
     background-color: #00A4BD;
 }
+
+.main-content{
+    display: flex;
+}
+
+.main-content content-description{
+    flex: 70%;
+}
